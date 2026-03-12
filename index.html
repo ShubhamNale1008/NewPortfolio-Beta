@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shubham Nale — CS engineering student passionate about AI, machine learning, and web development. View my certifications, projects, and get in touch.">
+    <meta name="author" content="Shubham Nale">
+    <meta name="theme-color" content="#0a0e27">
+    <meta property="og:title" content="Shubham Nale — Portfolio">
+    <meta property="og:description" content="CS student passionate about AI, machine learning, and web development. Explore my projects, certifications, and get in touch.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shubhamnale.vercel.app/">
+    <meta property="og:site_name" content="Shubham Nale">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://shubhamnale.vercel.app/profile/og-banner.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Shubham Nale — CS Student & Developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shubham Nale — Portfolio">
+    <meta name="twitter:description" content="CS student passionate about AI, machine learning, and web development. Explore my projects, certifications, and get in touch.">
+    <meta name="twitter:image" content="https://shubhamnale.vercel.app/profile/og-banner.png">
+    <meta name="twitter:image:alt" content="Shubham Nale — CS Student & Developer">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shubhamnale.vercel.app/">
+    <!-- Security: Content-Security-Policy (covers GitHub Pages which cannot set HTTP headers) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: blob: https:; connect-src 'self' https://api.web3forms.com; worker-src blob: https://cdnjs.cloudflare.com; frame-src 'none'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <!-- Favicon: SN premium hexagon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='bd' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%236366f1'/><stop offset='50%25' stop-color='%23a78bfa'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient><linearGradient id='tx' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='%23ffffff'/><stop offset='100%25' stop-color='%23c4b5fd'/></linearGradient></defs><polygon points='50,4 93,27 93,73 50,96 7,73 7,27' fill='%230d0a2e'/><polygon points='50,4 93,27 93,73 50,96 7,73 7,27' fill='none' stroke='url(%23bd)' stroke-width='5'/><polygon points='50,14 84,32 84,68 50,86 16,68 16,32' fill='none' stroke='%236366f1' stroke-width='1.2' opacity='0.4'/><text x='50' y='62' font-size='34' font-family='Arial Black,Arial,sans-serif' font-weight='900' fill='url(%23tx)' text-anchor='middle' letter-spacing='2'>SN</text><rect x='29' y='68' width='42' height='3.5' rx='1.75' fill='url(%23bd)'/></svg>">
+    <title>Shubham Nale — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
+    <!-- Preload LCP image for faster Largest Contentful Paint -->
+    <link rel="preload" as="image" href="profile/main.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-container" id="loaderContainer">
+        <!-- Ambient background orbs -->
+        <div class="loader-orb loader-orb-1"></div>
+        <div class="loader-orb loader-orb-2"></div>
+        <div class="loader-orb loader-orb-3"></div>
+
+        <!-- Central card -->
+        <div class="loader-card" id="loaderCard">
+            <!-- Brand -->
+            <div class="loader-brand">
+                <span class="loader-brand-text">SN</span><span class="loader-brand-dot">.</span>
+            </div>
+
+            <!-- SVG Ring progress -->
+            <div class="loader-ring-wrap">
+                <svg class="loader-ring-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#6366f1"/>
+                            <stop offset="50%" stop-color="#a78bfa"/>
+                            <stop offset="100%" stop-color="#ec4899"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Track -->
+                    <circle class="ring-track" cx="60" cy="60" r="50" fill="none" stroke-width="5"/>
+                    <!-- Animated fill -->
+                    <circle class="ring-fill" id="ringFill" cx="60" cy="60" r="50"
+                        fill="none" stroke="url(#ringGrad)" stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-dasharray="314"
+                        stroke-dashoffset="314"
+                        transform="rotate(-90 60 60)"/>
+                    <!-- Glow dot at tip -->
+                    <circle class="ring-tip" id="ringTip" cx="60" cy="10" r="4" fill="#a78bfa"/>
+                </svg>
+                <!-- Percent in center -->
+                <div class="loader-percent-wrap">
+                    <span class="loader-percent" id="loaderPercent">0</span>
+                    <span class="loader-percent-sym">%</span>
+                </div>
+            </div>
+
+            <!-- Tagline with shimmer -->
+            <p class="loader-tagline">Simply Lovely</p>
+
+            <!-- Thin progress bar -->
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill" id="loaderBarFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">SN<span class="logo-dot">.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link"><span class="nav-icon"><i class="fas fa-user"></i></span>About</a>
+                <a href="#education" class="nav-link"><span class="nav-icon"><i class="fas fa-graduation-cap"></i></span>Education</a>
+                <a href="#skills" class="nav-link"><span class="nav-icon"><i class="fas fa-code"></i></span>Skills</a>
+                <a href="#projects" class="nav-link"><span class="nav-icon"><i class="fas fa-rocket"></i></span>Projects</a>
+                <a href="#certificates" class="nav-link"><span class="nav-icon"><i class="fas fa-trophy"></i></span>Certificates</a>
+                <a href="#personal" class="nav-link"><span class="nav-icon"><i class="fas fa-heart"></i></span>Interests</a>
+                <a href="#contact" class="nav-link"><span class="nav-icon"><i class="fas fa-envelope"></i></span>Contact</a>
+                <a href="#" class="nav-link nav-link-resume"><span class="nav-icon"><i class="fas fa-file-lines"></i></span>Resume</a>
+            </div>
+            <button class="nav-resume-btn" id="openResumeModal" aria-label="View Resume">
+                <i class="fas fa-file-lines"></i>
+                <span>Resume</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="bg-orb bg-orb-1"></div>
+            <div class="bg-orb bg-orb-2"></div>
+            <div class="bg-orb bg-orb-3"></div>
+            <div class="bg-orb bg-orb-4"></div>
+            <div class="bg-grid"></div>
+            <div class="bg-noise"></div>
+        </div>
+        <div class="hero-content">
+            <!-- Availability Badge -->
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+            <!-- Profile Picture Section -->
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="profile/main.png" alt="Shubham Nale" class="profile-image" fetchpriority="high" width="220" height="220">
+                    <div class="profile-overlay"></div>
+                </div>
+                <h2 class="profile-name">Shubham Nale</h2>
+            </div>
+            <h1 class="hero-title">Learning AI. Building Foundations.</h1>
+           <p class="hero-subtitle">CS student passionate about <br class="mobile-br"><span class="typed-text" id="typedText"></span></p>
+            <div class="cta-group">
+                <a href="#certificates" class="cta-button primary"><i class="fas fa-trophy"></i> View Achievements</a>
+                <a href="#contact" class="cta-button secondary"><i class="fas fa-envelope"></i> Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm <strong>Shubham Rajendra Nale</strong>, a Computer Science and Technology student who genuinely enjoys building things with code and exploring how technology can solve real problems.</p>
+                    <p>For me, programming is not just about writing code — it's about creating something useful from an idea. I like experimenting with technologies like Python, AI, and web development, and turning small ideas into real projects that people can actually use.</p>
+                    <p>Right now, I'm working on building an <strong>AI Lab Assistant for Engineering Students</strong>, a project focused on helping students understand technical concepts more easily. I enjoy the process of learning, building, improving, and seeing an idea slowly turn into a real product.</p>
+                    <p>I also believe that mindset plays a huge role in growth. A quote from <strong>Max Verstappen</strong> really resonates with me:</p>
+                    <blockquote class="about-quote">"I am the best driver because I believe that I am the best, because every driver needs to think like that — otherwise it's better to stay at home."
+<span class="mv-trigger" id="mvTrigger" role="button" tabindex="0" aria-label="Watch Max Verstappen edit">— Max Verstappen <i class="fas fa-play-circle mv-trigger-icon"></i></span></blockquote>
+                    <p>For me, this isn't about arrogance — it's about confidence and believing in your potential. Whether it's coding, building projects, or learning something new, I try to approach everything with that same mindset: keep improving, keep pushing forward, and never stop building.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Degree</span>
+                            <span class="stat-value">B.Tech — CS &amp; Technology</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-university"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">University</span>
+                            <span class="stat-value">Shivaji University, Kolhapur</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-brain"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Focus Areas</span>
+                            <span class="stat-value">AI · Web Dev · Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Building strong academic foundations in computer science and engineering.</p>
+            </div>
+            <div class="edu-timeline">
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <div class="edu-card-top">
+                            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="edu-badge edu-badge--current">Current</div>
+                        </div>
+                        <h3 class="edu-degree">B.Tech &mdash; Computer Science &amp; Engineering</h3>
+                        <p class="edu-institution"><i class="fas fa-university"></i> School of Engineering and Technology, Shivaji University, Kolhapur</p>
+                        <p class="edu-year"><i class="fas fa-calendar-alt"></i> 2024 &ndash; 2028 &nbsp;&bull;&nbsp;       <!--<span class="edu-score"> CGPA&nbsp;8.2</span></p>-->
+                        <p class="edu-desc">Studying core CS fundamentals including Data Structures, Algorithms, Operating Systems, Database Management, and specializing in Artificial Intelligence and Machine Learning.</p>
+                        <div class="edu-tags">
+                            <span class="edu-tag">Data Structures</span>
+                            <span class="edu-tag">Algorithms</span>
+                            <span class="edu-tag">AI &amp; ML</span>
+                            <span class="edu-tag">DBMS</span>
+                            <span class="edu-tag">OS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <div class="edu-card-top">
+                            <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        </div>
+                        <h3 class="edu-degree">HSC &mdash; Science (PCM + CS) &nbsp;|&nbsp; 11th & 12th Grade</h3>
+                        <p class="edu-institution"><i class="fas fa-university"></i> Vivekanand College, Kolhapur</p>
+                        <p class="edu-year"><i class="fas fa-calendar-alt"></i> 2022 &ndash; 2024 &nbsp;&bull;&nbsp; <span class="edu-score">77.5%</span></p>
+                        <p class="edu-desc">Completed HSC with Physics, Chemistry, Mathematics and Computer Science. Developed a strong foundation in core sciences and early programming concepts.</p>
+                        <div class="edu-tags">
+                            <span class="edu-tag">Mathematics</span>
+                            <span class="edu-tag">Physics</span>
+                            <span class="edu-tag">Chemistry</span>
+                            <span class="edu-tag">Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <div class="edu-card-top">
+                            <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+                        </div>
+                        <h3 class="edu-degree">SSC &mdash; 10th Grade</h3>
+                        <p class="edu-institution"><i class="fas fa-university"></i> S.K.Pant.Walawalkar High School, Kolhapur</p>
+                        <p class="edu-year"><i class="fas fa-calendar-alt"></i> 2020 &ndash; 2021 &nbsp;&bull;&nbsp; <span class="edu-score">93%</span></p>
+                        <p class="edu-desc">Completed SSC with distinction. Laid the groundwork in mathematics and sciences that sparked an interest in technology and engineering.</p>
+                        <div class="edu-tags">
+                            <span class="edu-tag">Mathematics</span>
+                            <span class="edu-tag">Science</span>
+                            <span class="edu-tag">English</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">What I Do</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Skills I've built through coursework, certifications, and hands-on projects.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Foundations</h3>
+                    <p>Strong foundation in programming using Python and C, with focus on logic, data structures, and problem solving.</p>
+                    <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">C</span><span class="skill-tag">DSA</span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Artificial Intelligence & ML</h3>
+                    <p>Learning core AI and Machine Learning concepts including supervised learning, data preprocessing, and model evaluation.</p>
+                    <div class="skill-tags"><span class="skill-tag">Scikit-learn</span><span class="skill-tag">NumPy</span><span class="skill-tag">Pandas</span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Building clean, responsive websites using HTML, CSS, JavaScript, and modern development practices.</p>
+                    <div class="skill-tags"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Technologies</h3>
+                    <p>Hands-on experience with Git, GitHub, VS Code, Python libraries, and basic Linux workflows.</p>
+                    <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">VS Code</span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data & Analysis</h3>
+                    <p>Working with data using Python libraries to analyze patterns, clean datasets, and extract meaningful insights.</p>
+                    <div class="skill-tags"><span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span><span class="skill-tag">Jupyter</span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Strategic thinking paired with creative solutions for complex challenges.</p>
+                    <div class="skill-tags"><span class="skill-tag">Algorithms</span><span class="skill-tag">Logic</span><span class="skill-tag">Research</span></div>
+                </div>
+            </div>
+            <!-- Currently Exploring -->
+            <div class="learning-path">
+                <div class="learning-path-header">
+                    <span class="learning-path-icon"><i class="fas fa-route"></i></span>
+                    <h3 class="learning-path-title">Currently Exploring</h3>
+                </div>
+                <div class="learning-pills">
+                    <span class="learning-pill learning-pill--now"><span class="lp-pulse"></span>Deep Learning</span>
+                    <span class="learning-pill learning-pill--now"><span class="lp-pulse"></span>Flask &amp; FastAPI</span>
+                    <span class="learning-pill learning-pill--next">React</span>
+                    <span class="learning-pill learning-pill--next">SQL &amp; Databases</span>
+                    <span class="learning-pill learning-pill--soon">Docker</span>
+                    <span class="learning-pill learning-pill--soon">Cloud Computing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Things I've built — real-world applications of what I'm learning.</p>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-card-top" style="--proj-color: #6366f1;">
+                        <i class="fas fa-globe project-card-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ShubhamNale1008/NewPortfolio" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://shubhamnale.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-desc">A premium, fully responsive single-page portfolio with animated loader, PDF.js resume viewer, certificate gallery modal, contact form, and interactive scroll animations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PDF.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-top" style="--proj-color: #10b981;">
+                        <i class="fa-solid fa-wand-magic-sparkles project-card-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ShubhamNale1008/LuxEditor" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://luxeditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">LuxEditor</h3>
+                        <p class="project-desc">A fully browser-based photo editor with Lightroom-style adjustment controls (exposure, contrast, shadows, highlights), VSCO-inspired filter presets, auto-enhance, and creative tools like crop, rotate, brush, eraser, and text overlay. Runs entirely offline — no uploads, no server.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Canvas API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card--soon">
+                    <div class="project-card-top" style="--proj-color: #f59e0b;">
+                        <i class="fas fa-flask project-card-icon"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">Experiment &amp; Exploration</h3>
+                        <p class="project-desc">Exploring AI, ML, and data concepts through hands-on experiments. More details will be added as projects take shape.</p>
+                        <div class="project-tags">
+                            <span class="project-tag project-tag--soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Certifications &amp; Achievements</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Industry-recognized credentials from IBM, Oracle, Tata, and more.</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-cert="new">
+                    <img src="certificates/IBM1.jpg" alt="IBM1">     
+                    <h3>Artificial Intelligence Fundamentals</h3>
+                </div>
+                <div class="certificate-card" data-cert="new">
+                    <img src="certificates/Coursera ULY4D3S9NEWN_page-0001.jpg" alt="IBM">     
+                    <h3>Python for Data Science and AI & Development</h3>
+                </div>
+                <div class="certificate-card" data-cert="certificate">
+                    <img src="certificates/certificate.jpg" alt="Internship Certificate">
+                    <h3>Internship Certificate</h3>
+                </div>
+                <div class="certificate-card" data-cert="course">
+                    <img src="certificates/course.jpg" alt="Course Completion">
+                    <h3>Course Completion</h3>
+                </div>
+                <div class="certificate-card" data-cert="new">
+                    <img src="certificates/OracleAI.jpg" alt="Oracle University">
+                    <h3>Oracle University</h3>
+                </div>
+                <div class="certificate-card" data-cert="achievement">
+                    <img src="certificates/LA2JDIMJZX.png" alt="Buildathon Participation Certificate">
+                    <h3>Buildathon Participant Certificate</h3>
+                </div>
+                <div class="certificate-card" data-cert="tata">
+                    <img src="certificates/Tata Data Analytics_page-0001.jpg" alt="Tata Data Analytics">
+                    <h3>Tata Data Analytics</h3>
+                </div>
+                <div class="certificate-card" data-cert="MaTPO">
+                    <img src="certificates/MaTPO.jpg" alt="Certificate Of Participation">
+                    <h3>Certificate Of Participation</h3>
+                </div>
+            </div><!-- end certificates-grid -->
+        </div>
+    </section>
+
+    <!-- Personal Section -->
+    <section class="personal" id="personal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Beyond the Code</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">What keeps me inspired, creative, and well-rounded outside of tech.</p>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <h3><i class="fas fa-film interest-icon"></i> Editing</h3>
+                    <p>I enjoy editing videos in DaVinci Resolve, focusing on clean cuts, smooth pacing, and simple storytelling. (Still  Learning) </p>
+                </div>
+                <div class="interest-card">
+                    <h3><i class="fas fa-camera interest-icon"></i> Photography</h3>
+                    <p>I like capturing moments and exploring light, composition, and perspective, which also improves my sense of design.</p>
+                </div>
+                <div class="interest-card">
+                    <h3><i class="fas fa-music interest-icon"></i> Music</h3>
+                    <p>I enjoy listening to KRSNA’s rap, along with lo-fi and instrumental music while studying or coding—it helps me stay focused and motivated.</p>
+                </div>
+                <div class="interest-card">
+                    <h3><i class="fas fa-plane interest-icon"></i> Travel</h3>
+                    <p>I enjoy exploring new places and cultures, finding inspiration and fresh perspectives along the way.</p>
+                </div>
+                <div class="interest-card">
+                    <h3><i class="fas fa-graduation-cap interest-icon"></i> Learning</h3>
+                    <p>I’m always curious and constantly learning about AI, machine learning, and core computer science concepts through projects and experimentation.</p>
+                </div>
+                <div class="interest-card">
+                    <h3><i class="fas fa-users interest-icon"></i> Community</h3>
+                    <p>I enjoy being part of developer communities and hope to contribute to open-source projects while learning from others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Left — Info card -->
+                <div class="contact-info reveal reveal-left">
+                    <div class="contact-status">
+                        <span class="status-dot"></span>
+                        <span>Open to opportunities</span>
+                    </div>
+                    <h3 class="contact-info-heading">Let's build something great together</h3>
+                    <p class="contact-info-body">I'm a second-year CS student passionate about AI and web development. Whether you have a project idea, an internship opportunity, or just want to chat — I'd love to hear from you.</p>
+
+                    <div class="contact-details">
+                        <a href="mailto:shubhamnale1008@gmail.com" class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-detail-label">Email</div>
+                                <div class="contact-detail-value">shubhamnale1008@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shubham-nale-235802331" target="_blank" rel="noopener noreferrer" class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <div class="contact-detail-label">LinkedIn</div>
+                                <div class="contact-detail-value">Shubham Nale</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ShubhamNale1008" target="_blank" rel="noopener noreferrer" class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <div class="contact-detail-label">GitHub</div>
+                                <div class="contact-detail-value">ShubhamNale1008</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.instagram.com/itz_shubh1008?igsh=MXJpMWttdWkwbDE2dA==" class="cs-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.credly.com/users/shubham-nale.262b38a3" class="cs-icon" aria-label="Credly" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i></a>
+                        <a href="https://youtube.com/@snxzedit?si=szsijCjBR8sNaagF" class="cs-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right — Contact form -->
+                <div class="contact-form-wrap reveal reveal-right">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cf-name">Your Name</label>
+                                <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="cf-email">Email Address</label>
+                                <input type="email" id="cf-email" name="email" placeholder="you@example.com" required autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-subject">Subject</label>
+                            <input type="text" id="cf-subject" name="subject" placeholder="Project idea / Internship / Just saying hi" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" id="formSubmit">
+                            <span class="form-submit-text">Send Message</span>
+                            <i class="fas fa-paper-plane form-submit-icon"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cursor spotlight (desktop only) -->
+    <div class="cursor-spotlight" id="cursorSpotlight" aria-hidden="true"></div>
+
+    <!-- ARIA live region: announces toast messages to screen readers -->
+    <div id="toastLiveRegion" role="status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">SN<span class="logo-dot">.</span></a>
+                    <p class="footer-tagline">Simply Lovely</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/ShubhamNale1008" class="footer-social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-nale-235802331" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/itz_shubh1008?igsh=MXJpMWttdWkwbDE2dA==" class="footer-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@snxzedit?si=szsijCjBR8sNaagF" class="footer-social" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="footer-copy">© <span id="footerYear"></span> Shubham Nale. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Preview Modal -->
+    <div class="resume-modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume Preview">
+        <div class="resume-modal-overlay" id="resumeModalOverlay"></div>
+        <div class="resume-modal-content">
+            <div class="resume-modal-header">
+                <div class="resume-modal-title-wrap">
+                    <i class="fas fa-file-pdf resume-modal-icon"></i>
+                    <span class="resume-modal-title">Shubham Nale — Resume</span>
+                </div>
+                <div class="resume-modal-actions">
+                    <a href="resume/Shubham_Nale_Resume.pdf" download="Shubham_Nale_Resume.pdf" class="resume-modal-download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                    <button class="resume-modal-close" id="resumeModalClose" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="resume-modal-body" id="resumeModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+        <div class="cert-modal-overlay" id="certModalOverlay"></div>
+        <div class="cert-modal-content">
+            <div class="cert-modal-header">
+                <h2 id="certModalTitle" class="cert-modal-title"></h2>
+                <button class="cert-modal-close" id="certModalClose" aria-label="Close">&times;</button>
+            </div>
+            <div class="cert-modal-image-container">
+                <img id="certModalImage" src="" alt="Certificate" class="cert-modal-image">
+            </div>
+            <div class="cert-modal-footer">
+                <button class="cert-modal-download" id="certDownload">Open Full Size</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Max Verstappen Video Modal -->
+    <div class="mv-modal-overlay" id="mvModalOverlay" role="dialog" aria-modal="true" aria-labelledby="mvModalTitle">
+        <div class="mv-modal">
+            <!-- Top accent bar -->
+            <div class="mv-modal-accent-bar"></div>
+
+            <button class="mv-modal-close" id="mvModalClose" aria-label="Close video">&times;</button>
+
+            <div class="mv-modal-header">
+                <span class="mv-modal-badge"><i class="fas fa-circle" style="font-size:0.5em;"></i>&nbsp; Live Edit</span>
+                <h3 class="mv-modal-title" id="mvModalTitle">Max Verstappen</h3>
+                <p class="mv-modal-subtitle">The Flying Dutchman — Oracle Red Bull Racing</p>
+            </div>
+
+            <div class="mv-modal-video-wrap">
+                <div class="mv-video-spinner" id="mvVideoSpinner"><span></span></div>
+                <video id="mvVideoFrame" controls playsinline preload="none">
+                    <source src="MaxV/MaxVerstappen.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Stat chips -->
+            <div class="mv-modal-stats">
+                <div class="mv-stat">
+                    <span class="mv-stat-value">4&times;</span>
+                    <span class="mv-stat-label">World Titles</span>
+                </div>
+                <div class="mv-stat-divider"></div>
+                <div class="mv-stat">
+                    <span class="mv-stat-value">71</span>
+                    <span class="mv-stat-label">Race Wins</span>
+                </div>
+                <div class="mv-stat-divider"></div>
+                <div class="mv-stat">
+                    <span class="mv-stat-value">48</span>
+                    <span class="mv-stat-label">Pole Positions</span>
+                </div>
+            </div>
+
+            <p class="mv-modal-desc">
+                I am the best driver because I believe that I am the best — every driver needs to think like that.
+                <em>Otherwise it's better to stay at home.</em>
+            </p>
+        </div>
+    </div>
+
+                <!-- PDF.js must load before script.js (pdfjsLib used on modal open) -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e" crossorigin="anonymous"></script>
+                <script src="script.js"></script>
+</body>
+</html>
