@@ -9,7 +9,7 @@
 
 **CS Student · AI Enthusiast · Web Developer**
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-shubhamnale.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://shubhamnale.vercel.app)
+[![Live Site](https://img.shields.io/badge/Live%20Site-shubhamnale.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://shubhamnale1.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-ShubhamNale1008-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ShubhamNale1008)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Shubham%20Nale-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-nale-235802331)
 [![Email](https://img.shields.io/badge/Email-shubhamnale1008%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubhamnale1008@gmail.com)
