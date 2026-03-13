@@ -129,7 +129,7 @@ open index.html
 
 | Platform | Link |
 |---|---|
-| Portfolio | [shubhamnale.vercel.app](https://shubhamnale.vercel.app) |
+| Portfolio | [shubhamnale.vercel.app](https://shubhamnale1.vercel.app) |
 | GitHub | [ShubhamNale1008](https://github.com/ShubhamNale1008) |
 | LinkedIn | [shubham-nale-235802331](https://www.linkedin.com/in/shubham-nale-235802331) |
 | Email | [shubhamnale1008@gmail.com](mailto:shubhamnale1008@gmail.com) |
