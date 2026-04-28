@@ -374,6 +374,7 @@
                         <div class="project-links">
                             <a href="https://github.com/ShubhamNale1008/LuxEditor" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             <a href="https://luxeditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                            <span class="lx-trigger" id="lxTrigger" role="button" tabindex="0" aria-label="Watch LuxEditor tutorial"><i class="fas fa-play-circle lx-trigger-icon"></i></span>
                         </div>
                     </div>
                     <div class="project-card-body">
@@ -686,7 +687,53 @@
         </div>
     </div>
 
-                <!-- PDF.js must load before script.js (pdfjsLib used on modal open) -->
+        <!-- LuxEditor Tutorial Video Modal -->
+        <div class="lx-modal-overlay" id="lxModalOverlay" role="dialog" aria-modal="true" aria-labelledby="lxModalTitle">
+            <div class="lx-modal">
+                <div class="lx-modal-accent-bar"></div>
+                <button class="lx-modal-close" id="lxModalClose" aria-label="Close video">&times;</button>
+
+                <div class="lx-modal-header">
+                    <span class="lx-modal-badge"><i class="fas fa-circle" style="font-size:0.5em;"></i>&nbsp; Tutorial</span>
+                    <h3 class="lx-modal-title" id="lxModalTitle">LuxEditor — Tutorial</h3>
+                    <p class="lx-modal-subtitle">Quick walkthrough of core features</p>
+                </div>
+
+                <div class="lx-modal-video-wrap">
+                    <div class="lx-video-spinner" id="lxVideoSpinner"><span></span></div>
+                    <video id="lxVideoFrame" controls playsinline preload="none">
+                        <source src="Luxeditor/Timeline 1.mov" type="video/quicktime">
+                        <source src="Luxeditor/Timeline 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Stat chips -->
+                <div class="lx-modal-stats">
+                    <div class="lx-stat">
+                        <span class="lx-stat-value">100%</span>
+                        <span class="lx-stat-label">Free</span>
+                    </div>
+                    <div class="lx-stat-divider"></div>
+                    <div class="lx-stat">
+                        <span class="lx-stat-value">Easy</span>
+                        <span class="lx-stat-label">Editing</span>
+                    </div>
+                    <div class="lx-stat-divider"></div>
+                    <div class="lx-stat">
+                        <span class="lx-stat-value">20+</span>
+                        <span class="lx-stat-label">Premium Features</span>
+                    </div>
+                </div>
+
+                <p class="lx-modal-desc">
+                    Experience seamless, desktop-grade photo editing directly in your browser.
+                    <em>Fast, secure, and fully client-side.</em>
+                </p>
+            </div>
+        </div>
+
+                    <!-- PDF.js must load before script.js (pdfjsLib used on modal open) -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e" crossorigin="anonymous"></script>
                 <script src="script.js"></script>
 </body>

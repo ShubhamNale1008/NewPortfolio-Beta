@@ -74,6 +74,66 @@
   }, 6000);
 })();
 
+// *** LUXEDITOR TUTORIAL VIDEO MODAL ***
+(() => {
+  const overlay  = document.getElementById('lxModalOverlay');
+  const closeBtn = document.getElementById('lxModalClose');
+  const trigger  = document.getElementById('lxTrigger');
+  const video    = document.getElementById('lxVideoFrame');
+  const spinner  = document.getElementById('lxVideoSpinner');
+  if (!overlay || !trigger || !video) return;
+
+  function trapFocus(e) {
+    if (e.key !== 'Tab') return;
+    const focusable = Array.from(
+      overlay.querySelectorAll('button, video, [tabindex="0"]')
+    ).filter(el => !el.disabled);
+    const first = focusable[0];
+    const last  = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+    }
+  }
+
+  if (spinner) {
+    video.addEventListener('waiting', () => spinner.classList.add('visible'));
+    video.addEventListener('playing', () => spinner.classList.remove('visible'));
+    video.addEventListener('canplay', () => spinner.classList.remove('visible'));
+    video.addEventListener('error',   () => spinner.classList.remove('visible'));
+  }
+
+  function openModal() {
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    overlay.addEventListener('keydown', trapFocus);
+    if (spinner) spinner.classList.add('visible');
+    video.play().catch(() => { if (spinner) spinner.classList.remove('visible'); });
+    closeBtn.focus();
+  }
+
+  function closeModal() {
+    overlay.classList.remove('active');
+    video.pause();
+    video.currentTime = 0;
+    if (spinner) spinner.classList.remove('visible');
+    document.body.style.overflow = '';
+    overlay.removeEventListener('keydown', trapFocus);
+    trigger.focus();
+  }
+
+  trigger.addEventListener('click', openModal);
+  trigger.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+  });
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+  });
+})();
+
 // *** HAMBURGER MENU ***
 (function () {
   const hamburger = document.getElementById('hamburger');
@@ -917,6 +977,65 @@ document.addEventListener('keydown', (e) => {
   }
 
   // Spinner tied to video buffering events
+  if (spinner) {
+    video.addEventListener('waiting', () => spinner.classList.add('visible'));
+    video.addEventListener('playing', () => spinner.classList.remove('visible'));
+    video.addEventListener('canplay', () => spinner.classList.remove('visible'));
+    video.addEventListener('error',   () => spinner.classList.remove('visible'));
+  }
+
+  function openModal() {
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    overlay.addEventListener('keydown', trapFocus);
+    if (spinner) spinner.classList.add('visible');
+    video.play().catch(() => { if (spinner) spinner.classList.remove('visible'); });
+    closeBtn.focus();
+  }
+
+  function closeModal() {
+    overlay.classList.remove('active');
+    video.pause();
+    video.currentTime = 0;
+    if (spinner) spinner.classList.remove('visible');
+    document.body.style.overflow = '';
+    overlay.removeEventListener('keydown', trapFocus);
+    trigger.focus();
+  }
+
+  trigger.addEventListener('click', openModal);
+  trigger.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+  });
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+  });
+})();
+// *** LUXEDITOR VIDEO MODAL ***
+(() => {
+  const overlay  = document.getElementById('lxModalOverlay');
+  const closeBtn = document.getElementById('lxModalClose');
+  const trigger  = document.getElementById('lxTrigger');
+  const video    = document.getElementById('lxVideoFrame');
+  const spinner  = document.getElementById('lxVideoSpinner');
+  if (!overlay || !trigger || !video) return;
+
+  function trapFocus(e) {
+    if (e.key !== 'Tab') return;
+    const focusable = Array.from(
+      overlay.querySelectorAll('button, video, [tabindex="0"]')
+    ).filter(el => !el.disabled);
+    const first = focusable[0];
+    const last  = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+    }
+  }
+
   if (spinner) {
     video.addEventListener('waiting', () => spinner.classList.add('visible'));
     video.addEventListener('playing', () => spinner.classList.remove('visible'));
